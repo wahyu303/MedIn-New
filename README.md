@@ -3,6 +3,7 @@ Nama Kelompok: Gtau
 Nama Anggota : 
 M Javier Rasyadi (21523242)
 M Hafiz (21523228)
+Reza Dwi Puspita 
 
 
 Job Desc:
@@ -15,3 +16,8 @@ Anggota 2:
 - Membuat dan menghubungkan Room Database pada aplikasi
 - Membuat algoritma naive bayes untuk memprediksi hasil penyakit mental user
 - Menampilkan hasil prediksi pada halaman hasil
+
+Anggota 3: 
+- Membantu membuat tampilan registrasi
+- Membuat logo
+- Membuat poster dan tampilan presentasi canva

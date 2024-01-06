@@ -3,7 +3,7 @@ Nama Kelompok: Gtau
 Nama Anggota : 
 M Javier Rasyadi (21523242)
 M Hafiz (21523228)
-Reza Dwi Puspita 
+Reza Dwi Puspita (21523076)
 
 
 Job Desc:

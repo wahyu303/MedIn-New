@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FormTubes</string>
+    <string name="artikel">
+        Kesehatan mental merupakan kondisi dimana individu memiliki kesejahteraan yang tampak dari dirinya yang mampu menyadari potensinya sendiri, memiliki kemampuan untuk mengatasi tekanan hidup normal pada berbagai situasi dalam kehidupan, mampu bekerja secara produktif dan menghasilkan, serta mampu memberikan kontribusi kepada komunitasnya.
+    </string>
+    <string name="judul">Mengenal pentingnya kesehatan pada remaja yang kerap dialami Gen-Z</string>
+    <string name="title_activity_maps_pelayanan">MapsPelayanan</string>
+    <string name="title_activity_maps_pelayanan2">MapsPelayanan2</string>
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Halaman3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/linearl3"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="18dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/lingkaran" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="2dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/garis" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/lingkaran" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/poppinssm"
+            android:text="Here's The Result"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+        android:id="@+id/textView3"
+        android:layout_width="351dp"
+        android:layout_height="91dp"
+        android:text="Saran dari kami untukmu"
+        android:fontFamily="@font/poppinssm"
+        android:textSize="28sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/frameLayout"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Penting: tanyakan lebih lanjut ke psikolog"
+        android:fontFamily="@font/poppins"
+        android:layout_below="@+id/textView"
+        android:textColor="#AA310B" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FDC9C9"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView2"
+        android:paddingBottom="10dp"
+        app:cardCornerRadius="20dp"
+        app:contentPadding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            app:srcCompat="@drawable/image_47" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="18dp"
+            android:paddingHorizontal="30dp"
+            android:text="Kamu mengalami Anxiety"
+            android:fontFamily="@font/poppinssm"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/frameLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C9F1FD"
+            android:layout_below="@+id/textView3"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:cardCornerRadius="20dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="329dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Jangan stress, kamu harus jaga mood dan lakukan olahraga"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:text="Berhenti merokok dan kurangi kafein, karena kandungan tersebut dapat memperburuk anxiety"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/poppins"
+                android:text="Tidur yang cukup. kekurangan tidur dapat memperburuk gejala Axiety. Lakukan latihan pencapaian"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnbacktohome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#20829F"
+            android:fontFamily="@font/poppinssm"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="Kembali ke halaman utama"
+            android:layout_below="@id/frameLayout2" />
+
+    </RelativeLayout>
+
+</ScrollView>

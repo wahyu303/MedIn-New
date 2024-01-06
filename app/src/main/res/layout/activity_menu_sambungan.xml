@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MenuSambungan">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Lihat Profil"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:gravity="left|center_vertical"
+        android:paddingHorizontal="115dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnkeProfile"
+        android:backgroundTint="#20829f"
+        android:fontFamily="@font/poppinssm"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Lihat Riwayat"
+        android:drawableLeft="@drawable/baseline_history_24"
+        android:gravity="left|center_vertical"
+        android:paddingHorizontal="110dp"
+        android:id="@+id/btnkeRiwayat"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#20829f"
+        android:fontFamily="@font/poppinssm"
+        android:textColor="#FFFFFF"/>
+
+
+
+</LinearLayout>

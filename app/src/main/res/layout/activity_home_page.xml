@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/selamatpagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat pagi"
+            android:fontFamily="@font/poppins"
+            android:textColor="#858585"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello GTau"
+            android:fontFamily="@font/poppinssm"
+            android:layout_marginTop="10dp"
+            android:id="@+id/hello"
+            android:layout_below="@+id/selamatpagi"
+            android:textSize="17sp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/hello"
+            android:layout_marginTop="57dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daerah Istimewa Yogyakarta"
+            android:fontFamily="@font/poppins"
+            android:textColor="#858585"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_marginTop="58dp"
+            android:textSize="10sp"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="190dp"
+            android:text="i"
+            android:backgroundTint="@color/white"
+            android:gravity="end"
+            android:background="@drawable/ic_person"
+            android:layout_toRightOf="@+id/imageView"
+            android:id="@+id/btnkeSambungan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cek mentalmu"
+            android:fontFamily="@font/poppinssm"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cekmental"
+            android:layout_below="@+id/hello"
+            android:textSize="25sp"/>
+
+
+        <Button
+            android:id="@+id/btnstart"
+            android:layout_width="373dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/cekmental"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#20829f"
+            android:text="Click To Start ->"
+            android:elevation="200dp"
+            android:fontFamily="@font/poppinssm"
+            android:textColor="#FFFFFF"
+            android:onClick="pindahforms"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cardview"
+            android:layout_below="@+id/btnstart"
+            android:backgroundTint="#FDC9C9"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layouts"
+                android:animateLayoutChanges="true">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/judul"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/poppinssm"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artikel"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/poppins"
+                    android:id="@+id/detailsText"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+                
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pelayanan mental terdekat"
+            android:fontFamily="@font/poppinssm"
+            android:layout_marginTop="40dp"
+            android:id="@+id/mentalterdekat"
+            android:layout_below="@+id/cardview"
+            android:textSize="25sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mentalterdekat"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#C9F1FD"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="10dp"
+            app:contentPaddingBottom="10dp"
+            app:contentPaddingLeft="5dp"
+            app:contentPaddingRight="5dp"
+            app:contentPaddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/layouts2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnpelayanan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/img_pelayanan1"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="left|center_vertical"
+                    android:text="RS PKU Muhammadiyah Jogjakarta\nJL.KH. Ahmad Dahlan no.20"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnpelayanan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/img_pelayanan1"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="left|center_vertical"
+                    android:text="RSUD Kota Yogyakarta\nJl. Ki Ageng Pemanahan No. 1"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnpelayanan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/img_pelayanan1"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="left|center_vertical"
+                    android:text="Jogja International Hospital\nJl. Ringroad Utara No. 160"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
